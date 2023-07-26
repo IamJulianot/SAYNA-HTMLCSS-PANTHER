@@ -1,0 +1,191 @@
+:root{
+    --color-blanc: #FFFFFF;
+    --color-beige: #F2CEF2;
+    --color-gris: #9E91B7;
+    --color-rose: #DF99F2;
+    --color-violet: #3D2DA6;
+    --color-bleu: #07338C;
+    --color-noir: #021740;
+}
+@font-face {
+    font-family: 'BEYNO';
+    src: url('fonts/beyno-webfont.woff2') format('woff2'),
+    url('fonts/beyno-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Cantarell';
+    src: url('fonts/cantarell-regular-webfont.woff2') format('woff2'),
+    url('fonts/cantarell-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Panthera';
+    src: url('fonts/pantheraregular-mvz9j-webfont.woff2') format('woff2'),
+    url('fonts/pantheraregular-mvz9j-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Wakanda Forever';
+    src: url('fonts/wakandaforever-regular-webfont.woff2') format('woff2'),
+    url('fonts/wakandaforever-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-size: 16px;
+    text-decoration: none;
+    background: radial-gradient(126.67% 350.28% at -21.35%
+    0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64,
+            0.837641) 94.57%, rgba(2, 23, 64, 0) 100%);
+    color: var(--color-blanc);
+    background-size: 1800px;
+    font-family: Cantarell, serif;
+    text-align: justify;
+}
+.wakandais{
+    font-family: "Wakanda Forever", serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.gras{
+    font-weight: bold;
+}
+h1{
+    font-size: 68px;
+    font-family: Panthera, serif;
+}
+h2{
+    font-size: 32px;
+    font-family: BEYNO, serif;
+    color: var(--color-rose)
+}
+h2.enigme{
+    font-size: 68px;
+    color: var(--color-rose);
+}
+.citation{
+    font-size: 14px;
+}
+footer{
+    font-size: 10px;
+    background-image: url("assets/All pages/back_footer.png");
+    height: 500px;
+    padding-top: 140px;
+}
+input{
+    width: 500px;
+    height: 56px;
+    border-radius: 38px;
+    padding-left: 20px;
+    background-color: #FFFFFF49;
+
+}
+button{
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    background-color: var(--color-beige);
+    margin: auto;
+}
+button.enigme:hover{
+    box-shadow: #f2cef2;
+}
+button.form:hover{
+    box-shadow: #021740;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.form{
+    width: 690px;
+    height: 520px;
+    border-radius: 180px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(180deg,#FFFFFF,#FFFFFF10);
+    padding: 30px;
+}
+textarea{
+    width: 500px;
+    height: 168px;
+    border-radius: 38px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.carte{
+    width: 300px;
+    background-color: var(--color-blanc);
+    border-radius: 10px;
+    padding: 10px 40px 100px 40px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header>ul{
+    width: 400px;
+    padding-right: 100px;
+    font-family: BEYNO;
+}
+header>a{
+    padding-left: 100px;
+}
+footer>div:nth-child(1)>img:nth-child(1){
+    float: right;
+}
+footer>div:nth-child(1)>a{
+    position: relative;
+    top: 160px;
+    left: 425px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+footer>div:nth-child(2)>div{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer>div:nth-child(2)>div>div>ul{
+    justify-content: space-around;
+}
+footer>div:nth-child(2)>p{
+    padding-left: 65px;
+}
+footer>div:nth-child(2){
+    padding-left: 50px;
+}
+footer>div:nth-child(2)>div>div:nth-child(2)>ul>li{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    color: white;
+    padding-top: 50px;
+}
+footer>div:nth-child(2)>div>div:nth-child(2)>ul>li>a{
+    position: absolute;
+    top: 50%; /* Placez l'élément au milieu de la hauteur du parent */
+    left: 50%; /* Placez l'élément au milieu de la largeur du parent */
+    transform: translate(-50%, -50%); /* Décalez l'élément de -50% de sa propre largeur et hauteur pour le centrer */
+}
